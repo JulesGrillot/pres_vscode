@@ -17,6 +17,14 @@ fonts:
 </div>
 
 ---
+layout: two-cols-title
+---
+
+# Interface
+
+Peut paraître complexe à première vue...
+
+---
 
 # Création de profil
 
@@ -306,6 +314,19 @@ Pour ajouter le fichier de configuration à l'extension remote SSH de VSCodium :
 
 ---
 
+# BDD
+
+Outil **SQLTools**, je ne l'utilise pas pour l'instant je suis toujours sur PgAdmin, mais je cherche à changer ça.
+Peut être complémentaire niveau sécurité avec le SSH. Obligation de se connecter en SSH pour avoir accès à certains compte admin.
+
+Permet de se connecter à une BDD sans enregistrer le MDP en dur dans un fichier de configuration contrairement aux autres extensions.
+Possibilité d'enregistrer des requêtes et d'avoir un historique des requêtes faites.
+
+Pas plus testé pour l'instant.
+Possibilité de faire du SQLite également.
+
+---
+
 # Live Server
 
 Très pratique pour le développement web.
@@ -321,101 +342,3 @@ Pour le webmapping, on évite les erreurs de CORS avec des données en local, ce
 Outil permettant de rejoindre une autre personne sur un projet de développement et de présenter le code, le mettre à jour, etc.
 
 Pratique mais un peu instable, la visio n'est pas au point.
-
----
-
-# BDD
-
-Outil **SQLTools**, je ne l'utilise pas pour l'instant je suis toujours sur PgAdmin, mais je cherche à changer ça.
-Peut être complémentaire niveau sécurité avec le SSH. Obligation de se connecter en SSH pour avoir accès à certains compte admin.
-
-Permet de se connecter à une BDD sans enregistrer le MDP en dur dans un fichier de configuration contrairement aux autres extensions.
-Possibilité d'enregistrer des requêtes et d'avoir un historique des requêtes faites.
-
-Pas plus testé pour l'instant.
-Possibilité de faire du SQLite également.
-
----
-
-layout: intro-image-right
-image: '<https://source.unsplash.com/collection/4966472/1920x1080>'
----
-
-# Création de profil
-
-## 6CEN AURA
-
----
-
-layout: image-right
-image: '<https://source.unsplash.com/collection/4966472/1920x1080>'
----
-
-# Slide Title
-
-## Slide Subtitle
-
-* Slide bullet text
-
----
-
-layout: bullets
----
-
-* Slide bullet text
-
----
-
-layout: section
----
-
-# Section Title
-
----
-
-layout: statement
----
-
-# Statement
-
----
-
-layout: fact
----
-
-# 100%
-
-Fact information
-
----
-
-layout: quote
----
-
-# "Notable quote"
-
-Attribution
-
----
-
-layout: 3-images
-imageLeft: '<https://source.unsplash.com/collection/4966472/1920x1080>'
-imageTopRight: '<https://source.unsplash.com/collection/4966472/1920x1080>'
-imageBottomRight: '<https://source.unsplash.com/collection/4966472/1920x1080>'
----
-
----
-
-layout: image
-image: '<https://source.unsplash.com/collection/4966472/1920x1080>'
----
-
----
-
-layout: center
-class: "text-center"
----
-
-# Learn More
-
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
