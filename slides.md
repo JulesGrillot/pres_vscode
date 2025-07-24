@@ -17,12 +17,36 @@ fonts:
 </div>
 
 ---
-layout: two-cols-title
----
 
 # Interface
 
 Peut paraître complexe à première vue...
+
+La barre de tâche permet de sélectionner des fichiers, à ouvrir ou un dossier qui vous servira de projet.
+Vous pourrez naviguer dans les fichiers du projet et les modifier.
+
+La barre de gauche permet de lister les extensions installées, par défaut on y trouve aussi l'explorateur de fichier, la recherche l'interface git, le deboggage, le magasin d'extension et la partie test. En bas de cette section on a les paramètres et ce qui concerne le profil.
+
+Au centre, l'éditeur qui peut se séparer à la verticale et à l'horizontale pour afficher 2 fichiers en parallèles.
+
+Sur la droite on a une vue dézoomée du fichier actuellement ouvert avec des éléments en surbrillance.
+
+Sur le bas on a la console, les différents éléments de débuggage, le journal d'erreurs, etc...
+
+---
+
+# Possibilités infinies
+
+Avec VSCode on peut :
+
+* Développer (code, git, doc)
+* Gérer des serveurs
+* Gérer des BDD
+* Faire de la prise de notes
+* Editer des tableurs
+* Faire des Slides
+* etc...
+
 
 ---
 
