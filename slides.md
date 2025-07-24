@@ -186,7 +186,7 @@ En double-cliquant sur la valeur il est possible de la changer.
 En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible de faire une recherche dans les variables
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 ## Sous Windows
 
@@ -207,7 +207,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 7. Dans une nouvelle fenêtre Windows Powershell (sans activer le mode administrateur), créer une clé ssh dans le dossier souhaité :
 
@@ -227,7 +227,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 10. Se rendre dans l'onglet <kbd>Agent SSH</kbd> :
 
@@ -238,7 +238,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 11. Si c'est un **serveur auquel vous vous êtes déjà connecté et avec lequel vous aviez déjà mis en place une méthode d'authorized_keys**  
     Se rendre sur le serveur, modifier la signature dans l'authorized_keys par la clé publique (déchiffrée) renseignée dans KeePassXC
@@ -260,7 +260,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 13. **Relancez le service ssh** avec cette commande :
 
@@ -281,7 +281,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 ## Paramétrage VsCodium
 
@@ -292,7 +292,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 5. Exemple de connexion :
 
@@ -314,7 +314,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 
 6. Une fois toutes vos connexions SSH renseignées, elles apparaîtront dans le volet de l'extension
 7. Si vous avez l'extension KeePassXC déverrouillée, vous pouvez lancer la connexion SSH en cliquant sur la connexion créer précédemment dans KeePassXC
@@ -322,7 +322,7 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 ---
 
-# SHH avec KeePassXC
+# SSH avec KeePassXC
 ## Mise en place à Asters
 
 Actuellement toutes nos clés SSH privées sont stockées dans KeePassXC et elles sont ajoutées à l'Agent SSH à chaque déverouillage de la BDD et supprimées dès que celle-ci est fermée.
