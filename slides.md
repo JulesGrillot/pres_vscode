@@ -55,7 +55,7 @@ Avec VSCode on peut :
 ## Optimisation de VSCode
 
 * Paramètres et Extensions peuvent être différent pour chaque profil
-* Il faut éviter les profils "fourre-tout"
+* Il faut éviter les profils "fourre-tout"hdfhd
 * Comme pour QGIS, on a une augmentation des performances avec plusieurs profils
 
 ## Bonnes pratiques
