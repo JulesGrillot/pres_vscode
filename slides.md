@@ -4,6 +4,7 @@ favicon: './image/vscodium.ico'
 fonts:
   sans: Oswald
   serif: Source Sans Pro
+hideInToc: true
 ---
 
 # Présentation VSCode
@@ -15,6 +16,14 @@ fonts:
     Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
 </div>
+
+---
+hideInToc: true
+---
+
+# Sommaire
+
+<Toc />
 
 ---
 
@@ -37,6 +46,8 @@ Sur le bas on a la console, les différents éléments de débuggage, le journal
 Ceci est une note
 -->
 
+---
+hideInToc: true
 ---
 
 # Possibilités infinies
@@ -112,6 +123,8 @@ Compatible avec d'autres solution Git (Gitea, GitLab, Forgejo, Codeberg, etc...)
 Explications réalisées via [ce tuto](https://aneto.pt/posts/tutorials/2024-05-11-create-easy-pyqgis-developement-environment-using-conda-and-vscode/)
 
 ---
+hideInToc: true
+---
 
 # Installer Conda
 
@@ -134,6 +147,8 @@ conda init
 Une fois qu'il est installé, réouvrez une nouvelle invite de commandes pour lancer la création de l'environment virtuel.
 
 ---
+hideInToc: true
+---
 
 # Créer un environnement conda spécifique à QGIS
 
@@ -155,6 +170,8 @@ print(sys.version)
 Normalement vous l'avez déjà fait mais si jamais il vous faut installer l'extension Python.
 Puis refermez toutes les instances de VSCode.
 
+---
+hideInToc: true
 ---
 
 # Utiliser l'environnement
@@ -198,6 +215,8 @@ Le debuggage permet de :
 
 * afficher l'évolution des variables et leur contenu ou encore le modifier
 
+---
+hideInToc: true
 ---
 
 # Debug
@@ -243,6 +262,8 @@ const final = {
 </script>
 
 ---
+hideInToc: true
+---
 
 # Debug
 
@@ -261,6 +282,7 @@ plusieurs types de breakpoints sont disponibles :
 ---
 layout: image-right
 image: './image/debug.png'
+hideInToc: true
 ---
 
 # Debug
@@ -294,6 +316,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 6. Créer un **MDP fort**, qui servira de passphrase
 
 ---
+hideInToc: true
+---
 
 # SSH avec KeePassXC
 
@@ -314,6 +338,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 9. Dans KeepassXC, se rendre dans l'entrée créé précédemment, dans <kbd>Avancé</kbd> ajouter un **nouveau fichier joints**, sélectionner la **clé privée** (fichier sans le .pub)
 
 ---
+hideInToc: true
+---
 
 # SSH avec KeePassXC
 
@@ -325,6 +351,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
     **Remarque** : On peut choisir de décocher la première case pour plus de sécurité et ajouter manuellement la clé à l'agent SSH avant d'essayer de s'y connecter en appuyant sur le bouton <kbd>Ajouter à l'agent</kbd> situé dans le même onglet.
 
 ---
+hideInToc: true
+---
 
 # SSH avec KeePassXC
 
@@ -346,6 +374,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
     **Coller la clé publique (déchiffrée) renseignée dans KeePassXC**
 
+---
+hideInToc: true
 ---
 
 # SSH avec KeePassXC
@@ -369,6 +399,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
     **Coller la clé publique (déchiffrée) renseignée dans KeePassXC**
 
 
+---
+hideInToc: true
 ---
 
 # SSH avec KeePassXC
@@ -391,6 +423,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 15. **Ouvrez la BDD KeePassXC** puis relancer la commande dans Windows Powershel, si tout va bien, la **connexion devrait réussir**.
 
 ---
+hideInToc: true
+---
 
 # SSH avec KeePassXC
 
@@ -401,6 +435,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 3. Cliquez sur l'engrenage situé en haut à droite du volet qui vient d'apparaître
 4. Un fichier config va s'ouvrir, c'est là où vous pourrez renseigner toutes vos connexions SSH
 
+---
+hideInToc: true
 ---
 
 # SSH avec KeePassXC
@@ -424,6 +460,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 * **IdentityFile //lien/vers/public_key/10.25.68.24.pub** Lien vers la clé publique qui permettra à KeePassXC de trouver la clé privé à utiliser pour se connecter au serveur qui lui possède également la clé publique. La connexion ne peut pas se faire entre 2 clés publiques.
 
 ---
+hideInToc: true
+---
 
 # SSH avec KeePassXC
 
@@ -431,6 +469,8 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 7. Si vous avez l'extension KeePassXC déverrouillée, vous pouvez lancer la connexion SSH en cliquant sur la connexion créer précédemment dans KeePassXC
 8. Fermez la fenêtre, fermez la BDD KeePassXC et réessayez, VsCodium vous demandera le MDP de l'utilisateur
 
+---
+hideInToc: true
 ---
 
 # SSH avec KeePassXC
@@ -499,6 +539,8 @@ A la fin de l'installation, le serveur de test en local sera lancé pour visuali
 Le fichier `slides.md` correspond à vos diapos, par défaut il contient un exemple de tout ce qu'il est possible de faire avec slidev.
 
 ---
+hideInToc: true
+---
 
 # Slidev
 L'édition se fait en markdown mais il est également possible d'utiliser du HTML ou du CSS.
@@ -524,6 +566,8 @@ Ces informations doivent être renseignées comme ceci :
   ---
 ```
 
+---
+hideInToc: true
 ---
 
 # Slidev
