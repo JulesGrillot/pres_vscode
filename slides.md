@@ -33,6 +33,10 @@ Sur la droite on a une vue dézoomée du fichier actuellement ouvert avec des é
 
 Sur le bas on a la console, les différents éléments de débuggage, le journal d'erreurs, etc...
 
+<!--
+Ceci est une note
+-->
+
 ---
 
 # Possibilités infinies
@@ -93,6 +97,90 @@ Compatible avec d'autres solution Git (Gitea, GitLab, Forgejo, Codeberg, etc...)
 2. Ouvrir le dossier local depuis VSCode
 
 3. Possible de réaliser toutes les opérations de logiciels de versionning
+
+---
+
+# Installation de l'environnement PyQGIS
+
+## Etapes
+
+* Installer Conda
+* Créer un environnement conda spécifique à QGIS
+* Configurer VSCode (normalement on l'a déjà fait)
+* Utiliser l'environnement
+
+Explications réalisées via [ce tuto](https://aneto.pt/posts/tutorials/2024-05-11-create-easy-pyqgis-developement-environment-using-conda-and-vscode/)
+
+---
+
+# Installer Conda
+
+Dans le tuto 4 logiciels nous sont proposés, j'ai choisi [miniforge](https://github.com/conda-forge/miniforge#miniforge3) car il est facile à installer et léger.
+
+Pour l'installation il faut télécharger l'éxécutable [ici](https://github.com/conda-forge/miniforge/releases). Puis le lancer.
+
+Ouvrir une invite de commandes Windows et lancer la commande suivante :
+
+```shell
+C:\Users\jgrillot\miniforge3\Scripts\activate
+```
+
+Puis :
+
+```shell
+conda init
+```
+
+Une fois qu'il est installé, réouvrez une nouvelle invite de commandes pour lancer la création de l'environment virtuel.
+
+---
+
+# Créer un environnement conda spécifique à QGIS
+
+Dans un nouveau terminal lancez la commande en remplaçant les versions de qgis et python (si vous ne spécifiez pas la version de QGIS la dernière version expérimentale sera installée) :
+
+```shell
+conda create -n qgis_dev qgis=3.40 python=3.12.10 -c conda-forge
+```
+
+Pour trouver la version du python de son install QGIS, se rendre dans la console Python de QGIS et taper :
+
+```python
+import sys
+print(sys.version)
+```
+
+# Configurer VSCode
+
+Normalement vous l'avez déjà fait mais si jamais il vous faut installer l'extension Python.
+Puis refermez toutes les instances de VSCode.
+
+---
+
+# Utiliser l'environnement
+
+Dans une nouvelle invite de commandes, lancez les commandes :
+
+```shell
+conda activate qgis_dev
+```
+
+Puis avec **VSCodium**
+```shell
+codium
+```
+
+Ou avec **VSCode**
+```shell
+code
+```
+
+Votre éditeur de code va ainsi se lancer, ouvrez un fichier python et tapez :
+```python
+from qgis.core import Qgs
+```
+
+L'autocompletion devrait vous proposer les différentes méthodes de PyQGIS
 
 ---
 
@@ -262,6 +350,29 @@ En appuyant sur <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>f</kbd> il est possible 
 
 # SSH avec KeePassXC
 
+11. Si c'est un **serveur auquel vous vous êtes déjà connecté et avec lequel vous aviez déjà mis en place une méthode d'authorized_keys**  
+    Se rendre sur le serveur, modifier la signature dans l'authorized_keys par la clé publique (déchiffrée) renseignée dans KeePassXC
+
+12. Si vous ne vous êtes jamais connecté au serveur, il vous faudra vous y rendre une première fois par une méthode plus traditionnelle
+
+    ```shell
+    ssh username@ip -p numero_port
+    ```
+
+    Puis renseignez le MDP utilisateur  
+    **Créer ou modifier le fichier authorized_keys** situé ici :
+
+    ```shell
+    nano ~/.ssh/authorized_keys
+    ```
+
+    **Coller la clé publique (déchiffrée) renseignée dans KeePassXC**
+
+
+---
+
+# SSH avec KeePassXC
+
 13. **Relancez le service ssh** avec cette commande :
 
     ```bash
@@ -366,3 +477,63 @@ Pour le webmapping, on évite les erreurs de CORS avec des données en local, ce
 Outil permettant de rejoindre une autre personne sur un projet de développement et de présenter le code, le mettre à jour, etc.
 
 Pratique mais un peu instable, la visio n'est pas au point.
+
+---
+
+# Slidev
+
+Création de Slide depuis VSCode en markdown
+
+Il faut [installer Node.js](https://nodejs.org/en/download)
+
+Se rendre dans un dossier avec le powershell et lancer la commande :
+
+```bash
+npm init slidev@latest
+```
+
+Il vous sera demander le nom du projet, choisissez par exemple `pres_vscode`, cela va créer un dossier du même nom avec tout le nécéssaire pour lancer slidev.
+
+A la fin de l'installation, le serveur de test en local sera lancé pour visualiser en temps réel les modifications faites au diapo.
+
+Le fichier `slides.md` correspond à vos diapos, par défaut il contient un exemple de tout ce qu'il est possible de faire avec slidev.
+
+---
+
+# Slidev
+L'édition se fait en markdown mais il est également possible d'utiliser du HTML ou du CSS.
+
+Dans le fichier, chaque diapositive est séparée par:
+```markdown
+  ---
+```
+
+Toutefois, il est possible d'ajouter des infos sur la diapositive avant son contenu comme :
+ - format
+ - transition
+ - lien des images
+
+Ces informations doivent être renseignées comme ceci :
+
+```markdown
+  ---
+  layout: two-cols
+  layoutClass: gap-16
+  ---
+  Super contenu en Markdown
+  ---
+```
+
+---
+
+# Slidev
+
+N'hésitez pas à vous inspirer des [thèmes de bases](https://sli.dev/resources/theme-gallery) et de la [galerie](https://sli.dev/resources/showcases) pour réaliser vos plus beaux diapo.
+
+L'accès au diapo ce fait via des adresses url :
+
+  diapo public       > http://localhost:3030/
+  mode présentation  > http://localhost:3030/presenter/
+  vue générale       > http://localhost:3030/overview/
+  export des slides  > http://localhost:3030/export/
+  
